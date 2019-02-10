@@ -3,11 +3,12 @@
 Working with this boilerplate:
 ------------
 Step by step comands:
-0. terminal - Go to discspace when you want to place your project,
-1. terminal - write "git clone https://github.com/CrissNowik/Bolierplate-for-frontend-stack.git" - enter,
-2. terminal - write "npm install" - enter,
-3. Boilerplate is ready
-4. Usefull comands:
+
+1. terminal - Go to discspace when you want to place your project,
+2. terminal - write "git clone https://github.com/CrissNowik/Bolierplate-for-frontend-stack.git" - enter,
+3. terminal - write "npm install" - enter,
+4. Boilerplate is ready
+5. Usefull comands:
 * npm run start 		= open devserver in browser on localhost:8080, reloading for each file save
 * npm run build 		= build minified for prod, bundle files in "dist" directory, 
 
