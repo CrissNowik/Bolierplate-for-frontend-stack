@@ -1,4 +1,4 @@
-<<<<<Cut of or move below part when not be needed in final version>>>
+* Cut of or move below part when not be needed in final version
 Working with this boilerplate:
 ------------
 Step by step comands:
@@ -19,7 +19,7 @@ This webpack configuration:
 - webpack devserver
 
 Additional: ready to work file's and folder's structure. 
-<<<<<Cut of or move above part when not be needed in final version>>>
+* Cut of or move above part when not be needed in final version
 
 Project title
 ====================
