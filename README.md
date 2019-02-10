@@ -1,4 +1,5 @@
-* Cut of or move below part when not be needed in final version
+* **Cut of or move below part when not be needed in final version**
+
 Working with this boilerplate:
 ------------
 Step by step comands:
@@ -8,7 +9,7 @@ Step by step comands:
 3. Boilerplate is ready
 4. Usefull comands:
 * npm run start 		= open devserver in browser on localhost:8080, reloading for each file save
-* npm run build 		= build minified for prod, bundle files in dist directory
+* npm run build 		= build minified for prod, bundle files in "dist" directory, 
 
 NOTE:
 This webpack configuration:
@@ -19,7 +20,7 @@ This webpack configuration:
 - webpack devserver
 
 Additional: ready to work file's and folder's structure. 
-* Cut of or move above part when not be needed in final version
+* **Cut of or move above part when not be needed in final version**
 
 Project title
 ====================
