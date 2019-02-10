@@ -1,27 +1,12 @@
-// webpack v4 exercise by Margarita Obraztsova
-const path = require('path');
-
-const nodeExternals = require('webpack-node-externals');
+/*******
+ * config for React and Vue here: https://www.valentinog.com/blog/webpack-tutorial/
+ */
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: { main: './src/index.js' },
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js'
-  },
-  target: 'node', 
-  externals: [nodeExternals()], 
   module: {
     rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
-      },
       {
         test: /\.scss$/,
         use: [
@@ -33,27 +18,35 @@ module.exports = {
               url: false,
             },
           },
-          'postcss-loader',
           "sass-loader"
         ]
-      }
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader",
+            options: { minimize: true }
+          }
+        ]
+      }     
     ]
   },
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: 'style.css',
+    new HtmlWebPackPlugin({
+      template: "./src/index.html",
+      filename: "./index.html"
     }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      hash: true,
-      template: './src/index.html',
-      filename: 'index.html'
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css"
     })
-  ],
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 9000,
-    hot: true
-  }
+  ]
 };

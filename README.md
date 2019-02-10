@@ -1,3 +1,26 @@
+<<<<<Cut of or move below part when not be needed in final version>>>
+Working with this boilerplate:
+------------
+Step by step comands:
+0. terminal - Go to discspace when you want to place your project,
+1. terminal - write "git clone https://github.com/CrissNowik/Bolierplate-for-frontend-stack.git" - enter,
+2. terminal - write "npm install" - enter,
+3. Boilerplate is ready
+4. Usefull comands:
+* npm run start 		= open devserver in browser on localhost:8080, reloading for each file save
+* npm run build 		= build minified for prod, bundle files in dist directory
+
+NOTE:
+This webpack configuration:
+- translating SASS to CSS,
+- transpiling ES6,
+- bundling JS, SCSS,
+- minifiing JS and HTML,
+- webpack devserver
+
+Additional: ready to work file's and folder's structure. 
+<<<<<Cut of or move above part when not be needed in final version>>>
+
 Project title
 ====================
 
@@ -13,11 +36,8 @@ Features:
 * feature  4
 * feature  5
 
-Commands:
+Inspiration:
 ------------
-* npm run dev 			= build bundle files in dist directory
-* npm run dev --watch 	= build bundles everytime when save file in IDE
-* npm run start 		= open devserver in browser on localhost:9000 // not available now
 
 
 Technology stack:
