@@ -17,13 +17,12 @@ This Webpack4 configuration:
 - translating SASS to CSS,
 - transpiling ES6,
 - bundling JS, SCSS,
-- minifing JS and HTML,
-- adding JS bundle file to dist HTML,
-- adding CSS bundle file to dist HTML
+- minifiing JS and HTML,
+- adding JS file to dist HTML,
 - webpack devserver
 
 **Additional:** 
-Ready to work file's and folder's structure. Index.html template.  
+Ready to work file's and folder's structure. 
 * **Cut of or move above part when not be needed in final version**
 
 Project title
